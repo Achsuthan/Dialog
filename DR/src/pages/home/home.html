@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+
+  <div>
+   <!-- <img src="https://media.giphy.com/media/3oGNDk715s04Hw0zbG/giphy-downsized.gif">-->
+  </div>
+
+  <br/><br/><br/>
+  <div #map id="map" style="height:100%;"></div>
+</ion-content>

@@ -1,0 +1,90 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Needs
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <br/><br/>
+
+
+  <ion-list>
+
+
+    <ion-item>
+      <ion-label>Phone number</ion-label>
+      <ion-input type="tel" value="" [(ngModel)]="phone"></ion-input>
+    </ion-item>
+
+
+    <br/>
+
+
+
+    <ion-item>
+      <ion-label>Firstname</ion-label>
+      <ion-input type="text" value="" [(ngModel)]="name"></ion-input>
+    </ion-item>
+
+    <br/><br/>
+
+    <ion-item>
+      <ion-label>Needed Items : </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Drinking Water</ion-label>
+      <ion-checkbox [(ngModel)]="water"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>Dry Foods</ion-label>
+      <ion-checkbox [(ngModel)]="dryfood"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>Clothes</ion-label>
+      <ion-checkbox [(ngModel)]="clothes"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>Mat</ion-label>
+      <ion-checkbox [(ngModel)]="mates"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>Mosquito net</ion-label>
+      <ion-checkbox [(ngModel)]="nets"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>FirstAid things</ion-label>
+      <ion-checkbox [(ngModel)]="FirstAid"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>Baby Milk/Milk Powder </ion-label>
+      <ion-checkbox [(ngModel)]="milk"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Candles </ion-label>
+      <ion-checkbox [(ngModel)]="candles"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Mosquito Coils </ion-label>
+      <ion-checkbox [(ngModel)]="colis"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Coocked Food </ion-label>
+      <ion-checkbox [(ngModel)]="CookedFood"></ion-checkbox>
+    </ion-item>
+
+  </ion-list>
+
+  <div padding>
+    <button ion-button color="primary" block  (click)="send()">Send Info</button>
+    <br/>
+    <button ion-button color="danger" block  (click)="clear()">Clear</button>
+  </div>
+
+</ion-content>

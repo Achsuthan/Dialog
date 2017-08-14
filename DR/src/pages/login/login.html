@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <br/><br/><br/><br/>
+
+
+  <ion-list>
+
+    <div style="text-align: center">
+      <img  style=" width: 100%; max-width: 200px" src="../../assets/img/logo.png">
+    </div>
+    <br/><br/>
+
+    <ion-item>
+      <ion-label>Phone number</ion-label>
+      <ion-input type="tel" value=""></ion-input>
+    </ion-item>
+
+    <br/>
+
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input type="password" value=""></ion-input>
+    </ion-item>
+
+    <br/>
+
+  </ion-list>
+
+  <div padding>
+    <button ion-button color="primary" block>Login</button>
+    <br/>
+    <button ion-button color="danger" block (click)="register()">Register</button>
+  </div>
+
+</ion-content>
